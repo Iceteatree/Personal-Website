@@ -1,4 +1,3 @@
-/* Test link works*/
 body {
     background-color: #212121;
     color: #fff;
@@ -7,18 +6,32 @@ body {
     margin: 0;
     border: 0;
     font-family: 'Montserrat', sans-serif;
+    height: 100%;
 }
 
 h1 {
     font-family: 'Merriweather', serif;
+    font-size: 5rem;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-item {
+    padding: 0 18px;
 }
 
 .main-heading {
-    margin: 10rem auto;
+    margin: 45vh auto;
+    height: 100%;
 }
 
-.nav-item {
-    padding: 0 18px;
+/* Background Image 1 Parralax Effect*/
+.bgimg1 {
+    background-color: #0d7377;
 }
 /* Misc */
 /*
