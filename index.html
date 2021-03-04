@@ -12,6 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <!-- Linking Google Fonts -->
     <!-- Merriweather -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,14 +25,18 @@
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
+    <!-- Creating a header section -->
     <header>
         <section>
+            <!-- Navbar created using Bootstrap classes -->
             <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">alan k</a>
+                    <!-- This button activates when the screen becomes too small -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerMenu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- The links in the top right -->
                     <div class="collapse navbar-collapse" id="navbarTogglerMenu">
                         <ul class="navbar-nav ms-auto">
                           <li class="nav-item">
@@ -43,6 +49,12 @@
                             <a class="nav-link" href="#experience">Experience</a>
                           </li>
                           <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                          </li>
+                          <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                           </li>
                         </ul>
@@ -51,28 +63,33 @@
             </nav>
         </section>
     </header>
+    <!-- The main section holds multiple sections that can be accessed via scrolling or by the navbar in the top right -->
     <main>
+        <!-- First section just a landing page basically -->
         <section class="container-fluid main-heading p-static">
             <h1>alan k</h1>
             <h3>a web developer</h3>
         </section>
+        <!-- This section contains a parralax effect triggered by the bgimg1 class -->
         <section class="container-fluid bgimg1 p-fluid">
-            <h2>...parralax effect goes here...</h2>
         </section>
+        <!-- This section holds the about information -->
         <section class="container-fluid main-about p-static" id="about">
             <div class="container">
+                <!-- An image of my face -->
                 <img class="imgFace img-fluid" src="images/Alansface.jpg" alt="Picture of my face">
-                <h2>about</h2>
+                <h2>About</h2>
                 <p>Hiya! Welcome to my personal portfolio. My name is Alan and I'm a 28 year old Chinese South African. I question myself and various policies of our current generation a lot. Most of the time I never take things at face value and when I can, I try to delve deeper and have a better understanding, whether right or wrong. To me, life is full of surprises and at any moment something new could popup; so, knowing this I hope to learn as many of its mysteries as I can, at my own pace.</p>
                 <p>I am known for my calm attitude under stressful conditions as well as being helpful when I have something to offer to the table. My colleagues often describe my personality as witty, honest, happy, hardworking and generally pleasing to be around.</p>
             </div>
         </section>
-        <section class="container-fluid bgimg2 p-fluid">
-            <h2>...parralax effect goes here...</h2>
-        </section>
+        <!-- The hr is customised to be dotted, enlarged and only 30% of the screen -->
+        <hr class="uniqueHR">
+        <!-- This is the education  section -->
         <section class="container-fluid main-education p-static" id="education">
+            <!-- Decided to try out a timeline approach, styling done in the css -->
             <div class="container timeline">
-                <h2>education</h2>
+                <h2>Education</h2>
                     <div class="timeline-container tc-left">
                         <h3>Hyperion Dev</h3>
                         <p>Web Development Bootcamp<br>
@@ -111,29 +128,188 @@
                     </div>
             </div>
         </section>
+        <!-- Added another parralax effect -->
+        <section class="container-fluid bgimg2 p-fluid">
+        </section>
+        <!-- This section contains my experience. Nothing too special about it -->
         <section class="container-fluid main-experience p-static" id="experience">
-            <h1>Experience section goes here</h1>
+            <div class="experience-container container list-group">
+                <h2>Work Experience</h2>
+                        <div class="list-group-item">
+                        <h3>English Program in Korea(EPIK) Teacher <br>(2016-2018)</h3>
+                        <p>Got to experience another countries culture and people whilst imparting my knowledge on fresh young minds. Still one of the greatest decisions of my life.</p>
+                        </div>
+                        <div class="list-group-item">
+                        <h3>Peter Rich Architects <br>
+                             (2016-2016)</h3>
+                        <p>Worked with a great mentor and one of South Africa's greatest architects Mr Peter Rich.</p>
+                        </div>
+                        <div class="list-group-item">
+                        <h3>Google Student Ambassador for Wits <br> (2014-2015)</h3>
+                        <p>Created opportunities for education and learning(as well as a bit of fun) by faciliating communication between the university and Google Africa.</p>
+                        </div>
+            </div>
         </section>
-        <section class="container-fluid main-software p-static">
-            <hr>
-            <h1>Skills and Software goes here</h1>
-            <hr>
+        <!-- This is my skills and software section. Used bootstrap grid to align things -->
+        <section class="container-fluid main-software p-static" id="skills">
+            <div class="container skills-container">
+                <h2>Skills and Software</h2>
+                <div class="row row-headings">
+                    <div class="col-sm col-arch-heading">
+                      <h3>Architecture</h3> 
+                    </div>
+                    <div class="col-sm col-design-heading">
+                      <h3>Design</h3>
+                    </div>
+                    <div class="col-sm col-webdev-heading">
+                      <h3>Web Development</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm col-arch">
+                        <!-- Hotlinked some icons... should probably downloaded them later. -->
+                        <img src="https://img.icons8.com/color/144/000000/autodesk-revit.png"/>
+                        <h5>Revit</h5>
+                        <h6>+-3 Years</h6>
+                    </div>
+                    <div class="col-sm col-arch">
+                        <img src="https://img.icons8.com/color/144/000000/autodesk-autocad.png"/>
+                        <h5>Autocad</h5>
+                        <h6>+-3 Years</h6>
+                    </div>
+                    <div class="col-sm col-arch">
+                        <img src="https://img.icons8.com/dusk/144/000000/lumion.png"/>
+                        <h5>Lumion</h5>
+                        <h6>+-3 Years</h6>
+                    </div>
+                    <div class="col-sm col-design">
+                        <img src="https://img.icons8.com/fluent/144/000000/adobe-photoshop.png"/>
+                        <h5>Photoshop</h5>
+                        <h6>+-6 Years</h6>
+                    </div>
+                    <div class="col-sm col-design">
+                        <img src="https://img.icons8.com/color/144/000000/adobe-illustrator.png"/>
+                        <h5>Illustrator</h5>
+                        <h6>+-1 Years</h6>
+                    </div>
+                    <div class="col-sm col-design">
+                        <img src="https://img.icons8.com/color/144/000000/google-sketchup.png"/>
+                        <h5>Sketchup</h5>
+                        <h6>+-2 Years</h6>
+                    </div>
+                    <div class="col-sm col-webdev">
+                        <img src="https://img.icons8.com/color/144/000000/html-5.png"/>
+                        <h5>HTML 5</h5>
+                        <h6>+-1 Month</h6>
+                    </div>
+                    <div class="col-sm col-webdev">
+                        <img src="https://img.icons8.com/color/144/000000/css3.png"/>
+                        <h5>CSS 3</h5>
+                        <h6>+-1 Month</h6>
+                    </div>
+                    <div class="col-sm col-webdev">
+                        <img src="https://img.icons8.com/color/144/000000/javascript.png"/>
+                        <h5>Javascript</h5>
+                        <h6>+-1 Month</h6>
+                    </div>
+            </div>
+            <div class="row">
+                <!-- These are empty because I needed to have an exact amount of columns as the above section otherwise the layout would be all over the place. -->
+                    <div class="col-sm col-arch">
+                    </div>
+                    <div class="col-sm col-arch">
+                    </div>
+                    <div class="col-sm col-arch">
+                    </div>
+                    <div class="col-sm col-design">
+                    </div>
+                    <div class="col-sm col-design">
+                        <img src="https://img.icons8.com/color/144/000000/adobe-indesign.png"/>
+                        <h5>Indesign</h5>
+                        <h6>+-3 Years</h6>
+                    </div>
+                    <div class="col-sm col-design">
+                    </div>
+                    <div class="col-sm col-webdev">
+                        <img src="https://img.icons8.com/ios-filled/144/000000/jquery.png"/>
+                        <h5>JQuery</h5>
+                        <h6>+-1 Month</h6>
+                    </div>
+                    <div class="col-sm col-webdev">
+                        <img src="https://img.icons8.com/color/144/000000/bootstrap.png"/>
+                        <h5>Bootstrap</h5>
+                        <h6>+-1 Month</h6>
+                    </div>
+                    <div class="col-sm col-webdev">
+                    </div>
+            </div>
         </section>
+        <!-- This section contains the projects I've done in coding so far. -->
+        <section class="container-fluid main-projects p-static" id="projects">
+            <div class="container projects-container">
+                <h2>Projects</h2>
+                <!-- Used the carousel template from Bootstrap 5.0 with a bit of tweaking here and there-->
+                <div id="carouselProjects" class="carousel carousel-light slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselProjects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselProjects" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselProjects" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                          <!-- Unfortunately I only have 1 coding project that is worthy of showing off at the moment... Hopefully I can fill the rest of the carousel by the end of the bootcamp -->
+                        <a href="https://github.com/Iceteatree/HypDev-Online-Store"><img src="images/Projects1.png" class="d-block w-100" alt="Picture of Starvinc frontpage"></a>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Project: Starvinc</h5>
+                          <p>Code/Programs Used: HTML, CSS, Javascript.</p>
+                          <p>My first website. It was an attempt to create an online store that had a theme of selling home cooked meals, delivered straight to your home.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="Reserved for future projects" class="d-block w-100" alt="Reserved for future projects">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Project: </h5>
+                          <p>Code Used: </p>
+                          <p>Placeholder Text.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Reserved for future projects" class="d-block w-100" alt="Reserved for future projects">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Project: </h5>
+                            <p>Code Used: .</p>
+                            <p>Placeholder Text.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjects"  data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjects"  data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </section>
+        <!-- This is the contact section -->
         <section class="container-fluid main-contact p-static" id="contact">
             <div class="container contact-container">
-                <h2>contact me</h2>
+                <h2>Contact me</h2>
                 <div class="contact-content">
                     <h4>Contact Number:</h4>
-                        <h5><i class="bi bi-telephone"></i> 060 878 6251</h5>  <br>
+                        <h5><i class="bi bi-telephone"></i> 060 878 6251</h5>
                     <h4>E-mail:</h4>
                         <h5><a href="mailto:alankow11@gmail.com"><i class="bi bi-envelope"></i> alankow11@gmail.com</a></h5> <br>
                     <a href="https://www.linkedin.com/in/alankow11/"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/Iceteatree"><i class="bi bi-github"></i></a> 
                 </div>
             </div>
         </section>
     </main>
+    <!-- A small footer at the bottom of the page -->
     <footer>
-        <h6>Alan Kow | 2021 | All rights reserved.</h6>
+        <h6>Alan Kow | 2021 | Work in Progress | All rights reserved.</h6>
     </footer>
     <!-- Linking in Bootstrap 5.0 Beta Javascript Built In functionality -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

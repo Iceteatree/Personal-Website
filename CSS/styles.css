@@ -1,3 +1,4 @@
+/* Just changing some default settings */
 body {
     background-color: #212121;
     color: #fff;
@@ -19,7 +20,9 @@ h2 {
     font-size: 3rem;
     font-weight: bold;
 }
+
 /* Hiding Scrollbars from various browsers */
+/* This one is for Chrome */
 html::-webkit-scrollbar { 
     display: none;
   }
@@ -30,6 +33,13 @@ scroll-behavior: smooth;
 scrollbar-width: none;  /* Firefox */
 }
 
+/* The changed Horizontal Rule  */
+.uniqueHR {
+    border-top: 50px dotted #14ffec;
+    background-color: #212121;
+    width: 30%;
+    margin: 0 auto;
+}
 
 /* Navbar */
 .navbar-brand {
@@ -52,10 +62,24 @@ ul.navbar-nav a:hover {
 }
 
 /* Background Image 1 Parralax Effect*/
-.bgimg1, .bgimg2{
-    background-color: #0d7377;
+.bgimg1 {
+    background-image: url("/images/Render1.jpg");
+    min-height: 800px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+/* Background Image 2 Parralax Effect*/
+.bgimg2 {
+background-image: url("/images/Render2.jpg");
+min-height: 1200px; 
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
 /* About */
 .main-about {
     height: 100%;
@@ -88,7 +112,7 @@ ul.navbar-nav a:hover {
 }
 
 .imgFace {
-    filter: saturate(0%);
+    /* filter: saturate(0%);  Used to be completely black and white but then I thought it was very bland so I changed it a bit*/
     padding: 2.5rem;
     float: left;
 }
@@ -105,9 +129,10 @@ ul.navbar-nav a:hover {
 }
 
 .main-education h2{
+    margin-top: 5rem;
     margin-bottom: 5rem;
 }
-
+/* The height of the ruler */
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -124,7 +149,7 @@ ul.navbar-nav a:hover {
     left: 50%;
     margin-left: -3px;
     top: 7rem;
-  }
+}
 
 .timeline-container {
     margin: 2rem 0;
@@ -146,7 +171,7 @@ ul.navbar-nav a:hover {
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-  }
+}
   
 /* Place the left containers to the left and the right containers to the right */
 .tc-left {
@@ -159,9 +184,9 @@ ul.navbar-nav a:hover {
 
 .tc-right::after {
     left: -13px;
-    }
+}
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
+/* Media query - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
     /* Place the timelime to the left */
     .timeline::after {
@@ -184,9 +209,90 @@ ul.navbar-nav a:hover {
     .tc-right {
     left: 0%;
     }
-  }
+}
 
 
+/* Work Experience */
+.main-experience {
+    background-color:#0d7377;
+    padding: 5rem 0;
+}
+
+.main-experience h2 {
+    padding: 2rem 0;
+}
+
+.main-experience .container {
+    max-width: 80%
+}
+
+.main-experience .container p{
+    margin: 0 auto;
+    width: 20rem;
+    font-size: larger;
+}
+
+.list-group-item {
+    background-color: #323232;
+    padding: 1.5rem 0;
+    margin: 1.5rem;
+}
+
+/* Skills and Software */
+
+.skills-container {
+    padding: 3rem 0;
+    padding-bottom: 8rem;
+    max-width: 80%;
+}
+
+.skills-container h2 {
+    padding: 2rem 0;
+}
+
+.col-arch-heading,
+.col-design-heading,
+.col-webdev-heading {
+    margin: 3rem 0;
+}
+
+.col-arch {
+    background-color:#464646;  
+}
+
+.col-design {
+    background-color: #3d3d3d;   
+}
+
+.col-webdev {
+    background-color: #323232;
+}
+
+.fab {
+    padding: 0.8rem;
+}
+
+.main-projects {
+    background-color: #323232;
+}
+
+/* Projects section */
+
+.projects-container h2 {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.projects-container {
+    padding-bottom: 8rem;
+    max-width: 75%;
+}
+
+.carousel-caption {
+    background-color: rgba(50, 50, 50, 0.8);
+    max-width: 50%;
+    margin: 0 auto;
+}
 
 
 /* Contact Section */
@@ -196,13 +302,23 @@ ul.navbar-nav a:hover {
 }
 
 .contact-content {
-    margin: 3rem 3rem;
+    margin: 2rem 0;
 }
 
 .contact-container {
     background-color: #323232;
     width: 20%;
     padding: 1rem;
+}
+
+.contact-container h2{
+    padding-top: 2rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .contact-container {
+        width: 80%;
+    }
 }
 
 .contact-container:hover {
@@ -224,8 +340,10 @@ ul.navbar-nav a:hover {
     color: #0d7377;
 }
 
-.bi-linkedin {
+.bi-linkedin,
+.bi-github {
     font-size: 3rem;
+    margin: 0 1rem;
 
 }
 
