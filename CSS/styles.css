@@ -63,7 +63,7 @@ ul.navbar-nav a:hover {
 
 /* Background Image 1 Parralax Effect*/
 .bgimg1 {
-    background-image: url("/images/Render1.jpg");
+    background-image: url("https://i.ibb.co/nfn1KxV/Render1.jpg");
     min-height: 800px; 
     background-attachment: fixed;
     background-position: center;
@@ -73,7 +73,7 @@ ul.navbar-nav a:hover {
 
 /* Background Image 2 Parralax Effect*/
 .bgimg2 {
-background-image: url("/images/Render2.jpg");
+background-image: url("https://i.ibb.co/xYv5RGz/Render2.jpg");
 min-height: 1200px; 
 background-attachment: fixed;
 background-position: center;
