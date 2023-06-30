@@ -39,5 +39,4 @@ This repository will be updated as my growth as a web developer happens. It is a
 ## Credits
 * [HyperionDev](https://www.hyperiondev.com/)
 * [FreeCodeCamp](https://www.freecodecamp.org/)
-* If you would like to leave any feedback and suggestions please feel free to contact me.
-Test test test 
+* If you would like to leave any feedback and suggestions please feel free to contact me. 
